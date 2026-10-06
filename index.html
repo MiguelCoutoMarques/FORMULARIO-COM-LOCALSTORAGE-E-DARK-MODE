@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <form id="meuFormulario">
+        <div class="grid-form">
+            <div class="campo campo-full">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+            </div>
+
+            <div class="campo campo-full">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco">
+            </div>
+
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" oninput="mascara_cep()" maxlength="10">
+            </div>
+
+            <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" oninput="mascara_cpf()" maxlength="14">
+            </div>
+
+            <div class="campo">
+                <label for="telefone">TELEFONE</label>
+                <input type="text" id="telefone" oninput="mascara_telefone()" maxlength="19">
+            </div>
+
+            <div class="campo">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" oninput="mascara_cnpj()" maxlength="18">
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" id="botao">Enviar</button>
+            </div>
+        </div>
+
+        <button id="toggle-dark-mode" class="btn-theme">🌓 Alternar Tema</button>
+    </form>
+
+    <script src="main.js">
+    </script>
+</body>
+</html>
